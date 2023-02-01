@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  public titulo: String = "Meu primeiro App"
+  public imgemRandomica: String = "https://picsum.photos/seed/picsum/800/600"
+  public imagemLocal: String = "../assets/icone-celular.png"
+
+  public atualiza(): void {
+    this.titulo = "Texto alterado"
+  }
+
+  public acao(): void {
+    this.titulo = "Botão clicado"
+  }
 
 }
