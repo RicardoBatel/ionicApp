@@ -8,6 +8,14 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
+  <h1>Navegação</h1>
+
+  <ion-button (click)="abrirBotoes()" expand="full">Botão</ion-button>
+  <ion-button (click)="abrirLista()" expand="full">Lista</ion-button>
+
+  <!--<ion-button [href]="'/botoes/'" routerDirectio="forward" expand="full">Botão</ion-button>-->
+
+  <!--
   Data Binding (ligação de dados)
 
   <h1>{{titulo}}</h1>
@@ -28,7 +36,7 @@
   
   <ion-img src="{{imgemRandomica}}"></ion-img>
 
-  <!--
+  
   <h4>Grid</h4>
 
   <ion-grid>
