@@ -8,13 +8,19 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
 
+  public resultado: String = ""
+  public pesquisa: String = ""
   public titulo: String = "Meu primeiro App"
   public imgemRandomica: String = "https://picsum.photos/seed/picsum/800/600"
   public imagemLocal: String = "../assets/icone-celular.png"
-
+      
   constructor(private navegacao: NavController) {  }
 
   ngOnInit() {
+  }
+
+  recuperar(){
+    this.resultado = this.pesquisa
   }
 
   abrirBotoes(){

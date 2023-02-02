@@ -8,6 +8,16 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
+  <h1>Modelos</h1>
+  <ion-item>
+    <ion-label position="stacked">Digite sua pesquisa:</ion-label>
+    <ion-input [(ngModel)]="pesquisa" type="text"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="recuperar()" expand="full">Clique</ion-button>
+
+  <br>{{resultado}}
+
   <h1>Navegação</h1>
 
   <ion-button (click)="abrirBotoes()" expand="full">Botão</ion-button>
